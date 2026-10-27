@@ -1,0 +1,18 @@
+{
+  "problem_type": "coloring",
+  "instance_name": "triangle",
+  "parameters": {
+    "graph": [[0, 1], [1, 2], [2, 0]],
+    "num_colors": 3
+  },
+  "bqm_sha256": "placeholder",
+  "optimal_solution": {
+    "sample": {"0_0": 1, "0_1": 0, "0_2": 0, "1_0": 0, "1_1": 1, "1_2": 0, "2_0": 0, "2_1": 0, "2_2": 1},
+    "energy": 0.0
+  },
+  "verification": {
+    "method": "greedy_algorithm",
+    "optimal_value": 0.0,
+    "derivation": "Each node gets a unique color, no conflicts"
+  }
+}

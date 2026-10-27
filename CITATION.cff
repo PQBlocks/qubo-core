@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pqblocks-qubo"
+version: "0.1.0"
+license: Apache-2.0
+repository-code: "https://github.com/PQBlocks/qubo-core"
+authors:
+  - name: "The PQBlocks Authors"
+keywords:
+  - qubo
+  - ising
+  - optimization
+  - quantum-inspired
+  - combinatorial-optimization
+  - bqm
+abstract: "Unified mathematical representation and converter library for Quadratic Unconstrained Binary Optimization (QUBO) and Ising formulations."

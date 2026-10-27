@@ -1,0 +1,27 @@
+{
+  "problem_type": "tsp",
+  "instance_name": "4city",
+  "parameters": {
+    "distance_matrix": [
+      [0, 1, 1, 1],
+      [1, 0, 1, 1],
+      [1, 1, 0, 1],
+      [1, 1, 1, 0]
+    ]
+  },
+  "bqm_sha256": "placeholder",
+  "optimal_solution": {
+    "sample": {
+      "0_0": 1, "0_1": 0, "0_2": 0, "0_3": 0,
+      "1_0": 0, "1_1": 1, "1_2": 0, "1_3": 0,
+      "2_0": 0, "2_1": 0, "2_2": 1, "2_3": 0,
+      "3_0": 0, "3_1": 0, "3_2": 0, "3_3": 1
+    },
+    "energy": 4.0
+  },
+  "verification": {
+    "method": "enumeration",
+    "optimal_value": 4.0,
+    "derivation": "Optimal tour 0→1→2→3→0 with unit distances = 4 edges"
+  }
+}

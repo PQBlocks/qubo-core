@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqblocks-qubo"
+version = "0.1.0"
+description = "Unified mathematical representation and converter library for Quadratic Unconstrained Binary Optimization (QUBO) and Ising formulations."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.11"
+authors = [{name = "The PQBlocks Authors"}]
+keywords = ["qubo", "ising", "optimization", "quantum-inspired", "combinatorial-optimization", "bqm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = ["numpy>=1.20.0", "networkx"]
+
+[project.optional-dependencies]
+test = ["pytest", "numpy>=1.20.0", "networkx"]
+
+[project.urls]
+Homepage = "https://github.com/PQBlocks/qubo-core"
+Documentation = "https://github.com/PQBlocks/qubo-core#readme"
+Source = "https://github.com/PQBlocks/qubo-core"
+Changelog = "https://github.com/PQBlocks/qubo-core/blob/main/CHANGELOG.md"
+Issues = "https://github.com/PQBlocks/qubo-core/issues"
+Security = "https://github.com/PQBlocks/qubo-core/security/policy"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,17 @@
+{
+  "problem_type": "maxcut",
+  "instance_name": "4cycle",
+  "parameters": {
+    "graph": [[0, 1], [1, 2], [2, 3], [3, 0]]
+  },
+  "bqm_sha256": "ea3f010ac8b61395e8cba3ffd9939ada5a8bb1f0ed8c37c6532f16a3daf3f402",
+  "optimal_solution": {
+    "sample": {"0": 1, "1": -1, "2": 1, "3": -1},
+    "energy": -4.0
+  },
+  "verification": {
+    "method": "hand_calculation",
+    "optimal_value": -4.0,
+    "derivation": "For a 4-cycle with unit weights, the maximum cut value is 4 (all edges cut). The BQM is formulated to minimize the negative cut value, so the optimal energy is -4.0."
+  }
+}
